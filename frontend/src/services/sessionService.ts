@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = `${import.meta.env.VITE_API_URL}/session`;
+const BASE_URL = `${import.meta.env.VITE_API_URL}/api/session`;
 
 export const saveSessionToDB = async (data: any) => {
   const response = await axios.post(`${BASE_URL}/save`, data);
